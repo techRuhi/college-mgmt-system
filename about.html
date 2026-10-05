@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About DSPMU</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/about.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- cursive simple beautiful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!----------------------------------------navbar------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-4 pe-3" href="index.html"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        href="maindashboard.html">Dashboard</a>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+
+                    <a class="btn btn-light" data-bs-toggle="modal" data-bs-target="#personalModal" href="you.html">
+                        <div class="image-mine"><img src="./image/you-image.jpg"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--......................................login Modal ................................-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><b>First Login to View Dashboard</b></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Official Email ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <a class="btn btn-primary text-center" href="maindashboard.html">Submit</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--......................................personal login Modal ................................-->
+    <div class="modal fade" id="personalModal" tabindex="-1" aria-labelledby="personalModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="personalModalLabel">Login to Edubost</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reg-no" class="form-label">Rgistration No.</label>
+                            <input type="password" class="form-control" id="reg-no">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <a class="btn btn-primary text-center" href="you.html">Submit</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------sign up Modal ----------------------------------------------------->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Get an EduPortal Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label"> Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------- top-photo -------------------------------------------------------------------------------->
+    <div class="container-fluid top-photo pe-4">
+        <div class="row image-inside me-4">
+            <h1 class="col first-line">About Our University</h1>
+            <h2 class="col second-line"></h2>
+            <p class="col third-line ">Providing Quality Higher Education for Academic and Professional Growth.</p>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------- some-text below phto --------------------------------------------------------------------->
+    <div class="container below-phto my-4 ">
+        <div class="row card-section-about mt-5">
+            <div class="col location m-2 translate">
+                <h3 class="my-3">LOCATION</h3>
+                <p class="text-center">Dr. Shyama Prasad Mukherjee University, P.O. - Ranchi University, Morahabadi,
+                    Ranchi - 834008,
+                    Jharkhand, India. </p>
+            </div>
+            <div class="col founded m-2 translate">
+                <h3 class="my-3">FOUNDED</h3>
+                <p class="text-center">Founded as a Government
+                    Intermediate College in 1926. later upgraded from the former Ranchi College to a unitary state
+                    university on April 11, 2017</p>
+            </div>
+            <div class="col campus m-2 translate">
+                <h3 class="my-3">CAMPUS</h3>
+                <p class="text-center">Edubost covers 1,132 acres with 107 buildings, offering 200+
+                    undergraduate majors, plus graduate and online programs.</p>
+            </div>
+        </div>
+        <div class="row para-section-about my-4 text-center">
+            <p>Dr. Shyama Prasad Mukherjee University (DSPMU) is located in Morabadi, Ranchi, Jharkhand, 834008. The
+                university is situated near Ranchi University and is easily accessible from the main city, with major
+                landmarks like the Vocational Building, Hostel Road.
+                DSPMU was originally established as a Government
+                Intermediate College in 1926. It was later upgraded from the former Ranchi College to a unitary state
+                university on April 11, 2017.
+                is dedicated to fostering positive change through education. We are committed to redefining student
+                success and enhancing our focus on research, creativity, partnerships, and community engagement. To
+                achieve these goals, we must be both efficient and effective. Above all, it is our people—students,
+                faculty, staff, alumni, friends, parents, families, and community members—who drive our university
+                forward and enable us to achieve excellence. </p>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------- container drone-video ----------------------------------------------------------------->
+    <div class="container drone-video my-3">
+        <div class="bg-video-div">
+            <!-- <video autoplay muted loop playsinline>
+                <source src="./video/university.mp4" type="video/mp4">
+            </video> -->
+
+            <video autoplay muted loop playsinline src="./video/university.mp4" type="video/mp4"></video>
+
+            <div class="content">
+                <h2>Welcome to Our University</h2>
+                <p>Have a Drone Shoot of our campus</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------------------------------------- mission and vission ----------------------------------------------------------------->
+    <div class="container-fluid  mission-vission my-4">
+        <div class="row  mission-vission my-3  text-center text-dark">
+            <h1 id="Mission-Vission-head" class="mt-5">Our Mission And Vission</h1>
+            <p>EduFord University's mission & vision is to empower students with a transformative education that fosters
+                academic excellence, innovation, and social responsibility. We aim to create an inclusive environment
+                where students develop critical thinking and prepare for impactful societal roles.</p>
+        </div>
+        <div class="row box-mission-vission">
+            <div class="col mission mx-4 p-3">
+                <h2 id="mission">Our Mission</h2>
+                <p>EduFord University empowers students through transformative education, promoting excellence,
+                    innovation, and societal impact.</p>
+                <h3 style="color: rgb(209, 206, 206);">With edubost, you can:</h3>
+                <p>
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-square-check"></i> Connect with communities through service.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Advance through cutting-edge research.</li>
+                    <li> <i class="fa-solid fa-square-check"></i> Encourage continuous learning and adaptability.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Deliver a challenging education.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Support critical thinking and leadership.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Foster an inclusive, equitable environment.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="col vission mx-4 p-3">
+                <h2 id="vission">Our Vission</h2>
+                <p>EduFord University's vision is to lead globally in education, driving innovation and preparing
+                    students for success in a dynamic.</p>
+                <h3 style="color: rgb(209, 206, 206);">With edubost, you can:</h3>
+                <p>
+                <ul class="list-unstyled">
+                    <li><i class="fa-solid fa-square-check"></i> Connect with communities through service.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Advance through cutting-edge research.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Encourage continuous learning and adaptability.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Deliver a challenging education.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Support critical thinking and leadership.</li>
+                    <li><i class="fa-solid fa-square-check"></i> Foster an inclusive, equitable environment.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------------------------------------- teachers ----------------------------------------------------------------->
+    <div class="container-fluid  teachers">
+        <div class="row teacher-text">
+            <p>our honorable teacher</p>
+            <h3>Our Expert Instructor</h3>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container py-4">
+                        <div class="row g-3 p-4">
+
+                            <div class="col teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher1.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Ruhi Anjum</p>
+                                        <p class="card-text2">faculty of c/c++ programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col  teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher2.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Nisha Kumari</p>
+                                        <p class="card-text2">faculty of html/css programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col  teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher4.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Pallvi Kumari</p>
+                                        <p class="card-text2">faculty of java script programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item active">
+                    <div class="container py-4">
+                        <div class="row g-3">
+
+                            <div class="col  teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher1.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Ruhi Anjum</p>
+                                        <p class="card-text2">faculty of c/c++ programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col  teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher4.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Nisha Kumari</p>
+                                        <p class="card-text2">faculty of html/css programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col  teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher2.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Pallvi Kumari</p>
+                                        <p class="card-text2">faculty of java script programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd slide -->
+                <div class="carousel-item active">
+                    <div class="container py-4">
+                        <div class="row g-3">
+
+                            <div class="col  teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher4.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Shrishti lakra</p>
+                                        <p class="card-text2">faculty of JAVA programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col  teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher2.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Priya Verma</p>
+                                        <p class="card-text2">faculty of Python programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col  teacher">
+                                <div class="card shadow-sm"><img src="./image/teacher1.png">
+                                    <div class="card-body">
+                                        <p class="card-text1">Reshma Kumari</p>
+                                        <p class="card-text2">faculty of Pandas programming language</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev " type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-white"><i class="fa-solid fa-left-long"></i></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon text text-white"><i class="fa-solid fa-right-long"></i></span>
+            </button>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------------ footer ------------------------------------------------------------------>
+    <div class="container-fluid footer my-3 p-4 mb-0">
+        <div class="container footer-inner my-5">
+            <div class="row footer-content">
+                <div class="col f-about">
+                    <p class="navbar-brand ps-4 pe-3 footer"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+                    <p>We have over 20 years experience providing expert Educational both businesses and individuals.
+                        Our Investment Committee brings cades the industry expertise in driving our investment approach.
+                        portfolio constructor and allocation</p>
+                    <a class="btn btn-secondary" href="help.html">Start Learning Now</a>
+                </div>
+
+                <div class="col quick-link">
+                    <h3 class="text-left mx-0">Quick Links</h3>
+                    <hr class="featurette-divider">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="help.html">Contact</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="col f-contact">
+                    <h3>Contact Us</h3>
+                    <hr class="featurette-divider">
+                    <p>If you want to contact us about any issue our support available to help you 8am-7pm Monday to
+                        saturday.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> Address: DSPMU,Moharabadi,Hatma,Hanchi</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> Call: 9008000776</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: dspmu@gmail.com</p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <footer id="footer-section" class="my-4 pt-2 px-3">
+                <p class="float-end"><a href="index.html">Back to top</a></p>
+                <p>© 2017-2025 Company, All rights reserved.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

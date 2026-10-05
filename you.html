@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/you.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- cursive simple beautiful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <!----------------------------------------navbar------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-4 pe-3" href="index.html"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="help.html">Help</a>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        href="maindashboard.html">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     <!--......................................dashboard login Modal ................................-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel"><b>First Login to View Dashboard</b>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Official Email ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <a class="btn btn-primary text-center" href="maindashboard.html">Submit</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------ top-after nav ---------------------------------------------------->
+    <div class="container-fluid top-section mb-5 ">
+        <div class="row top-portion p-3">
+            <div class="col col-md-6 top-text">
+                <h1 class="text-center">Ruhi Anjum</h1>
+                <h3 class="text-center">Department of Computer Application</h3>
+                <p class="text-center">3rd Semester</p>
+            </div>
+            <div class="col col-md-6 top-image mx-3"><img src="./image/profile.jpg"></div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------personal details portion ------------------------------------------------------------->
+
+    <div class="container details-portion my-5">
+        <!-------------------------------------------------------------container-acedemic------------------------------------------------------------>
+        <div class="container acedemic mt-4">
+            <div class="container radius box my-4">
+                <div class="top-teacher my-4">
+                    <h2>ACADEMIC STATUS</h2>
+                </div>
+                <hr class="featurette-divider">
+                <div class="container content-of-acedemic">
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Name</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: Ruhi Anjum</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Status</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: Active</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Course</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: Department Of CA</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Course Duration</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: 4 yrs (2024-2028)</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Semester</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: 2nd Sem</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Programming Level</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: Vocational(UG)</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Stream Name</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: Bachelor 0f Science</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Examination Roll NO.</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: 24B51030</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Registration NO.</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: DSPMU2024U51085</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Attendance of Current Semester</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: 89%</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Email Id</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: ruhi123456@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="t-box">
+                        <div class="tbox-point">
+                            <p>Fee Payment</p>
+                        </div>
+                        <div class="tbox-Ans">
+                            <p>: <span class="btn btn-success"> Clear payment</span></p>
+                        </div>
+                    </div>
+                </div> <br>
+            </div>
+        </div>
+
+        <!-------------------------------------------------------------- container personal -------------------------------------------------------------->
+        <div class="container personal mt-4">
+            <div class="container acedemic">
+                <div class="container radius box my-4">
+                    <div class="top-teacher my-4">
+                        <h2>PERSONAL STATUS</h2>
+                    </div>
+                    <hr class="featurette-divider">
+                    <div class="container content-of-acedemic">
+                        <div class="t-box">
+                            <div class="tbox-point">
+                                <p> Father's Name</p>
+                            </div>
+                            <div class="tbox-Ans">
+                                <p>: Md Mazid Ansari</p>
+                            </div>
+                        </div>
+
+                        <div class="t-box">
+                            <div class="tbox-point">
+                                <p> Mothers's Name</p>
+                            </div>
+                            <div class="tbox-Ans">
+                                <p>: Mahiran Nisha</p>
+                            </div>
+                        </div>
+
+                        <div class="t-box">
+                            <div class="tbox-point">
+                                <p>Mobile No.</p>
+                            </div>
+                            <div class="tbox-Ans">
+                                <p>: 9998887776</p>
+                            </div>
+                        </div>
+
+                        <div class="t-box">
+                            <div class="tbox-point">
+                                <p>Gender</p>
+                            </div>
+                            <div class="tbox-Ans">
+                                <p>: Female</p>
+                            </div>
+                        </div>
+
+                        <div class="t-box">
+                            <div class="tbox-point">
+                                <p>Caste Category</p>
+                            </div>
+                            <div class="tbox-Ans">
+                                <p>: BC1</p>
+                            </div>
+                        </div>
+                        <div class="t-box">
+                            <div class="tbox-point">
+                                <p>Religion</p>
+                            </div>
+                            <div class="tbox-Ans">
+                                <p>: Islam</p>
+                            </div>
+                        </div>
+
+                        <div class="t-box">
+                            <div class="tbox-point">
+                                <p>Address</p>
+                            </div>
+                            <div class="tbox-Ans">
+                                <p>: Bokaro, sec-9/B, Street-16</p>
+                                <p>: Pin-Code: 827009, Jharkhand</p>
+                            </div>
+                        </div>
+
+                        <div class="t-box">
+                            <div class="tbox-point">
+                                <p>Blood Group</p>
+                            </div>
+                            <div class="tbox-Ans">
+                                <p>: A+</p>
+                            </div>
+                        </div>
+                    </div> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!------------------------------------------------------------- attendance----------------------------------------------------------- -->
+
+    <div class="container radius box my-4">
+        <div class="row p-4">
+            <div class="dropdown col-1">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> Select </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Yearly</a></li>
+                    <li><a class="dropdown-item" href="#">Monthly</a></li>
+                    <li><a class="dropdown-item" href="#">Weekly</a></li>
+                    <li><a class="dropdown-item" href="#">today</a></li>
+                </ul>
+            </div>
+            <h2 id="student-Att-heading" class="col"> ATTENDANCE</h2>
+        </div>
+        <hr class="featurette-divider">
+        <div class="att-top my-3">
+            <div id="Att-present"></div>
+            <div id="Att-absent"></div>
+            <div id="Att-late"></div>
+            <div id="Att-halfday"></div>
+        </div>
+
+        <div class="box-0f-attendance">
+            <div class="Att-row">
+                <div class="Att-box" id="Att-box1"></div>
+                <div class="Att-text">Present</div>
+                <div class="Att-number">87%</div>
+            </div>
+
+            <div class="Att-row">
+                <div class="Att-box" id="Att-box2"></div>
+                <div class="Att-text">Absent</div>
+                <div class="Att-number">40%</div>
+            </div>
+
+            <div class="Att-row">
+                <div class="Att-box" id="Att-box3"></div>
+                <div class="Att-text">Late</div>
+                <div class="Att-number">20%</div>
+            </div>
+
+            <div class="Att-row">
+                <div class="Att-box" id="Att-box4"></div>
+                <div class="Att-text">Half-Day</div>
+                <div class="Att-number">20%</div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------- payment-Details --------------------------------------------------------------------->
+    <div class="container payment-details my-4">
+        <div class="container payment-heading my-4">
+            <h2>PAYMENT STATUS</h2>
+        </div>
+        <hr class="featurette-divider">
+        <div class="container pay-inner">
+            <div class="row text-center">
+                <div class="col top  ">Semester/year</div>
+                <div class="col top">Purpose</div>
+                <div class="col top">Amount Paid</div>
+                <div class="col top">Payment Date</div>
+                <div class="col top">Confirmation Page</div>
+                <div class="col top">Recipt</div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row text-center">
+                <div class="col">Semester 1</div>
+                <div class="col">Examination-Fee(Sem1)</div>
+                <div class="col">570.00</div>
+                <div class="col">21-12-2024</div>
+                <div class="col"><button class="btn btn-primary">Print Page</button></div>
+                <div class="col"><button class="btn btn-secondary">Print Recipt</button></div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row text-center">
+                <div class="col">Semester 1</div>
+                <div class="col">Course-Fee(Sem 1)</div>
+                <div class="col">570.00</div>
+                <div class="col">21-12-2024</div>
+                <div class="col"><button class="btn btn-primary">Print Page</button></div>
+                <div class="col"><button class="btn btn-secondary">Print Recipt</button></div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row text-center">
+                <div class="col">Semester 2</div>
+                <div class="col">Examination-Fee(Sem2)</div>
+                <div class="col">570.00</div>
+                <div class="col">21-12-2024</div>
+                <div class="col"><button class="btn btn-primary">Print Page</button></div>
+                <div class="col"><button class="btn btn-secondary">Print Recipt</button></div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row text-center">
+                <div class="col">Semester 2</div>
+                <div class="col">Course Fee (Sem 1)</div>
+                <div class="col">570.00</div>
+                <div class="col">21-12-2024</div>
+                <div class="col"><button class="btn btn-primary">Print Page</button></div>
+                <div class="col"><button class="btn btn-secondary">Print Recipt</button></div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+        <button class="btn btn-success">Click here for payment</button> <br><br>
+    </div>
+
+
+    <!----------------------------------------------------------------- Exam-result-status ----------------------------------------------------------------->
+
+    <div class="container payment-details my-4">
+        <div class="container payment-heading my-4">
+            <h2>EXAM-RESULT STATUS</h2>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row exam-details">
+            <div class="col-12">Name: Ruhi Anjum</div>
+            <div class="col-12">Examination-Roll No: 24B51030</div>
+            <div class="col-12">Registration No: DSPMU2024U51085</div>
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="container pay-inner">
+            <div class="row text-center">
+                <div class="col top">Semester</div>
+                <div class="col top">Total CGPA</div>
+                <div class="col top">Obtained CGPA</div>
+                <div class="col top">Letter Grade</div>
+                <div class="col top">Status</div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="container text-details ">
+                <div class="row text-center text-center ">
+                    <div class="col">Semester 1</div>
+                    <div class="col">10</div>
+                    <div class="col">9</div>
+                    <div class="col">A+</div>
+                    <div class="col">
+                        <button class="btn btn-secondary">view</button>
+                        <button class="btn btn-success">Download</button>
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row text-center no-hover ">
+                    <div class="col">Semester 2</div>
+                    <div class="col">10</div>
+                    <div class="col">9</div>
+                    <div class="col">A+</div>
+                    <div class="col">
+                        <button class="btn btn-secondary">view</button>
+                        <button class="btn btn-success">Download</button>
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row text-center ">
+                    <div class="col">Semester 3</div>
+                    <div class="col">10</div>
+                    <div class="col">9</div>
+                    <div class="col">A+</div>
+                    <div class="col">
+                        <button class="btn btn-secondary">view</button>
+                        <button class="btn btn-success">Download</button>
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <div class="row text-center ">
+                    <div class="col">Semester 4</div>
+                    <div class="col">10</div>
+                    <div class="col">9</div>
+                    <div class="col">A+</div>
+                    <div class="col">
+                        <button class="btn btn-secondary">view</button>
+                        <button class="btn btn-success">Download</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+    </div>
+
+    
+
+   <script src="./js/bootstrap.min.js"></script>
+   <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

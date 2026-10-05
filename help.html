@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/help.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- cursive simple beautiful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------------------navbar------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-4 pe-3" href="index.html"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="help.html">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--......................................login Modal ................................-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login to EduPortal</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="Email1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------sign up Modal ----------------------------------------------------->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><b>First Login to View Dashboard</b></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="Email1" class="form-label">Official Email ID</label>
+                            <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cname" class="form-label"> Confirm Password</label>
+                            <input type="password" class="form-control" id="cname">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <a class="btn btn-primary text-center" href="maindashboard.html">Submit</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------- top-photo -------------------------------------------------------------------------------->
+    <div class="container-fluid top-photo pe-4">
+        <div class="row image-inside me-4">
+            <h1 class="col first-line">contact us</h1>
+            <h2 class="col second-line"></h2>
+            <p class="col third-line ">Let us know how we can help , Get in Touch with Our University</p>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------call-email-location-------------------------------------------------------  -->
+    <div class="container contact-details my-5 p-3">
+        <div class="row contact-box p-4" id="call-email-location">
+            <div class="col call-us m-2 py-3 translate">
+                <span class="icon m-3"><i class="fa-solid fa-phone-volume" id="call"></i></span>
+                <h3 class="icon-botton-text text-center"> Call Us On</h3>
+                <p class="contact-para text-center">Mon-Fri from 8am to 7pm </p>
+                <h3 class="icon-botton-text text-center">+1 (415) 654-325</h3>
+            </div>
+            <div class="col our-location m-2 py-3 translate">
+                <span class="icon m-3"><i class="fa-solid fa-location-dot"></i></span>
+                <h3 class="icon-botton-text text-center">Our Location</h3>
+                <p class="contact-para text-center">Visit our DSPMU university</p>
+                <h3 class="icon-botton-text text-center">Morahabadi,Ranchi-834008,Jharkhand</h3>
+            </div>
+            <div class="col email-us m-2 py-3 translate">
+                <span class="icon my-3"><i class="fa-solid fa-envelope-circle-check"></i></span>
+                <h3 class="icon-botton-text text-center">Email Us On</h3>
+                <p class="contact-para text-center">Speak to our Friendly team. </p>
+                <h3 class="icon-botton-text text-center">edubost@example.com</h3>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- form portion ---------------------------------------->
+
+    <div class="container-fluid form-details p-2">
+        <div class="row form-detail-box m-5 p-4">
+
+            <div class="col right-side m-3">
+                <h2 class="m-4 mb-0">Let us know how we can help</h2>
+                <p class="ms-4 mt-3">Give us chance to serve and send us a message 👍🏻</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Enter Full Name</label>
+                        <input type="password" placeholder="" class="form-control" id="name">
+                    </div>
+
+                    <div class="mb-3 mt-4">
+                        <label for="Email" class="form-label"> Enter Email address</label>
+                        <input type="email" placeholder="abc@gmail.com" class="form-control" id="Email"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <div class=" form-floating mt-4">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="textarea"
+                            style="height: 100px"></textarea>
+                        <label for="textarea">Mention your Problem</label>
+                    </div>
+                    <button type="submit" class="button m-4">SEND MESSAGE <i
+                            class="fa-solid fa-comment-dots"></i></button>
+                </form>
+            </div>
+
+            <div class="col left-side my-5 m-3">
+                <div class="row help-text-para p-3">
+                    <h2 class="m-5">NEED HELP? CONTACT US</h2>
+                    <p>➤ Login or password reset issues <br>
+                        ➤ Profile update and personal details <br>
+                        ➤ Course or subject information <br>
+                        ➤ Attendance viewing or correction <br>
+                        ➤ Exam results and academic records <br>
+                        ➤ System access or technical issues <br></p><br>
+
+                    <h4 style="font-weight: 600; font-size: 1.3rem;"><b>Our team will review and respond during working
+                            hours.</b></h4> <br>
+                    <h4 style="font-weight: 600; font-size: 1.3rem;"><b>If the issue continues, visit the concerned
+                            department.</b></h4> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container map-section my-4">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6401.346881644095!2d85.3217481176738!3d23.386875970245857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1234102df0d%3A0xb17a5f56f15b579f!2sDr.shyama%20Prasad%20Mukherjee%20University!5e0!3m2!1sen!2sin!4v1770997731574!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+
+    <!------------------------------------------------------------------ footer ------------------------------------------------------------------>
+    <div class="container-fluid footer my-4 p-4 mb-0">
+        <div class="container footer-inner my-5">
+            <div class="row footer-content">
+                <div class="col f-about">
+                    <p class="navbar-brand ps-4 pe-3 footer"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+                    <p>We have over 20 years experience providing expert Educational both businesses and individuals.
+                        Our Investment Committee brings cades the industry expertise in driving our investment approach.
+                        portfolio constructor and allocation</p>
+                    <a class="btn btn-secondary" href="help.html">Start Learning Now</a>
+                </div>
+
+                <div class="col quick-link">
+                    <h3>Quick Links</h3>
+                    <hr class="featurette-divider">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="help.html">Contact</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="col f-contact">
+                    <h3>Contact Us</h3>
+                    <hr class="featurette-divider">
+                    <p>If you want to contact us about any issue our support available to help you 8am-7pm Monday to
+                        saturday.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> Address: DSPMU,Moharabadi,Hatma,Hanchi</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> Call: 9008000776</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: dspmu@gmail.com</p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <footer id="footer-section" class="my-4 pt-2 px-3">
+                <p class="float-end"><a href="index.html">Back to top</a></p>
+                <p>© 2017-2025 Company, All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

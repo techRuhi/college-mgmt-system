@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main dashboard</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/maindashboard.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- cursive simple beautiful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------------------------- navbar ------------------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-4 pe-3" href="index.html"><i class="fa-solid fa-school-lock"></i>EduBost</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Student
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="stuDetails.html">Student Details</a></li>
+                            <li><a class="dropdown-item" href="addStu.html">Add Student</a></li>
+                            <li><a class="dropdown-item" href="edit.html">Edit Student</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Teacher
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="teacherDetails.html">Teachers Details</a></li>
+                            <li><a class="dropdown-item" href="addteach.html">Add Teachers</a></li>
+                            <li><a class="dropdown-item" href="tedit.html">Edit Teachers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fee Status
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Student fees Status</a></li>
+                            <li><a class="dropdown-item" href="#">Teacher fees Status</a></li>
+                            <li><a class="dropdown-item" href="#">Employee fees Status</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Attendance
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="stuAtt.html">Student Attendance</a></li>
+                            <li><a class="dropdown-item" href="teachAtt.html">Teacher Attendance</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Attendance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <a class="btn btn-primary" href="help.html">Help</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!----------------------------------------------------------------------- top-photo -------------------------------------------------------------------------------->
+    <div class="container-fluid top-photo pe-4">
+        <div class="row image-inside me-4">
+            <h1 class="col first-line"> Our Dashboard</h1>
+            <h2 class="col second-line"></h2>
+            <p class="col third-line "> This page helps teachers manage daily academic work easily from one place.</p>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------- fill the form -------------------------------------------------------------------->
+    <div class="container-fluid fill-form my-4 p-5">
+        <div id="heading">
+            <h3>First fill This , Then You can Access The Dashboard</h3>
+            <P class="mb-5 text-center"><b>NOTE: Only our instructor can access this</b></P>
+        </div>
+        <div class="row form-detail">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Enter the Official Email-ID</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Enter the Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="pinNo" class="form-label">Enter the PIN</label>
+                    <input type="password" class="form-control" id="pinNo">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <!-- <button type="submit"  class="button m-4" data-bs-toggle="tab">Submit</button> -->
+
+                <!-- Submit Button -->
+                <ul class="nav nav-tabs" id="formTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a id="button-submit" class="nav-link mb-4" data-bs-toggle="tab" href="#my-course" role="tab">
+                            Submit
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-center"><b>After Submiting the details you can swipe dwon the view thw dashboard </b></p>
+
+                <!-- Tab Content -->
+                <div class="tab-content pt-4">
+                    <div class="tab-pane fade" id="my-course" role="tabpanel">
+                        <div class="container-fluid dash-Content g-4 my-5 p-5">
+                            <div class="row my-5">
+                                <div class="col imgage me-4"><img src="./image/uni-member.jpg" alt=""></div>
+                                <div class="col totalMemb ms-4">
+                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ">
+                                        <div class="card box mx-3 p-3" style="width:21rem;">
+                                            <div class="card-body">
+                                                <div id="total-details" class="row">
+                                                    <div class="image"><img src="./image/total-student.png">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="card-text mb-0"> TOTAL STUDENTS</p>
+                                                        <p class="card-textNO mb-2">3000</p>
+                                                    </div>
+                                                </div>
+                                                <p class="total-details-text mb-0">Current students strength</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card box mx-3 p-3" style="width: 21rem;">
+                                            <div class="card-body">
+                                                <div id="total-details" class="row">
+                                                    <div class="image"><img src="./image/total-student.png">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="card-text mb-0">TOTAL TEACHERS</p>
+                                                        <p class="card-textNO mb-2">500</p>
+                                                    </div>
+                                                </div>
+                                                <p class="total-details-text mb-0">Active Teaching Staff</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card box mx-3 p-3" style="width: 21rem;">
+                                            <div class="card-body">
+                                                <div id="total-details" class="row">
+                                                    <div class="image"><img src="./image/total-student.png">
+                                                    </div>
+                                                    <div class="col">
+                                                        <p class="card-text mb-0">TOTAL STAFFS</p>
+                                                        <p class="card-textNO mb-2">100</p>
+                                                    </div>
+                                                </div>
+                                                <p class="total-details-text mb-0">Supporting Staff Count</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="featurette-divider">
+
+
+
+                            <!------------------------------------------------------------------------------------ stu-attendance ------------------------------------------------------------------------------------->
+                            <div class="container-fluid student-att py-5">
+                                <div class="container radius-box-att my-4">
+                                    <div class="row p-4">
+                                        <h2 id="student-Att-heading" class="text-center">STUDENT ATTENDANCE</h2>
+                                    </div>
+                                    <hr class="featurette-divider">
+                                    <div class="att-top my-3">
+                                        <div id="Att-present"></div>
+                                        <div id="Att-absent"></div>
+                                        <div id="Att-late"></div>
+                                        <div id="Att-halfday"></div>
+                                    </div>
+
+                                    <div class="box-0f-attendance">
+                                        <div class="Att-row">
+                                            <div class="Att-box" id="Att-box1"></div>
+                                            <div class="Att-text">Present</div>
+                                            <div class="Att-number">87%</div>
+                                        </div>
+
+                                        <div class="Att-row">
+                                            <div class="Att-box" id="Att-box2"></div>
+                                            <div class="Att-text">Absent</div>
+                                            <div class="Att-number">40%</div>
+                                        </div>
+
+                                        <div class="Att-row">
+                                            <div class="Att-box" id="Att-box3"></div>
+                                            <div class="Att-text">Late</div>
+                                            <div class="Att-number">20%</div>
+                                        </div>
+
+                                        <div class="Att-row">
+                                            <div class="Att-box" id="Att-box4"></div>
+                                            <div class="Att-text">Half-Day</div>
+                                            <div class="Att-number">20%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!---------------------------------------------------------------------------------------- top teachers ---------------------------------------------------------------------------------------->
+
+                            <div class="container-fluid top-section my-4">
+                                <div class="container radius-box my-4 ms-0">
+                                    <div class="top-teacher my-4">
+                                        <h2>TOP TEACHER</h2>
+                                    </div>
+                                    <hr class="featurette-divider">
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher1.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>RUHI ANJUM</h2>
+                                            <p>ruhi1234@gmail.com</p>
+                                        </div>
+                                        <div class="tbox-sub">C/C++</div>
+                                    </div>
+
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher2.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>PRIYA VERMA</h2>
+                                            <p>priya1234@gmail.com</p>
+                                        </div>
+                                        <div class="tbox-sub">C/C++</div>
+                                    </div>
+
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher4.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>PALLAVI LUMARI</h2>
+                                            <p>pallvi1234@gmail.com</p>
+                                        </div>
+                                        <div class="tbox-sub">Operating system</div>
+                                    </div>
+
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher1.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>SRISHTI LAKRA</h2>
+                                            <p>srishti1234@gmail.com</p>
+                                        </div>
+                                        <div class="tbox-sub">C/C++</div>
+                                    </div>
+
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher2.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>NISHA KUMARI</h2>
+                                            <p>nisha1234@gmail.com</p>
+                                        </div>
+                                        <div class="tbox-sub">HTML/CSS</div>
+                                    </div>
+                                </div>
+
+
+                                <!------------------------------------------------------------------------------------------ top students ---------------------------------------------------------------------------------------------------->
+                                <div class="container radius-box my-4">
+                                    <div class="top-teacher my-4 me-0">
+                                        <h2>TOP STUDENTS</h2>
+                                    </div>
+                                    <hr class="featurette-divider">
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher1.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>RUHI ANJUM</h2>
+                                            <p>Department of CA</p>
+                                        </div>
+                                        <div class="tbox-sub">9.7 CGPA</div>
+                                    </div>
+
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher2.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>PRIYA VERMA</h2>
+                                            <p>Department of IT</p>
+                                        </div>
+                                        <div class="tbox-sub">9.7 CGPA</div>
+                                    </div>
+
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher4.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>PALLAVI LUMARI</h2>
+                                            <p>Department of Science</p>
+                                        </div>
+                                        <div class="tbox-sub">9.7 CGPA</div>
+                                    </div>
+
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher1.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>SRISHTI LAKRA</h2>
+                                            <p>Department of Management</p>
+                                        </div>
+                                        <div class="tbox-sub">9.7 CGPA</div>
+                                    </div>
+
+                                    <div class="t-box my-3">
+                                        <div class="tbox-img"><img src="./image/teacher2.png"></div>
+                                        <div class="tbox-name">
+                                            <h2>NISHA KUMARI</h2>
+                                            <p>Department of Commerce</p>
+                                        </div>
+                                        <div class="tbox-sub">9.7 CGPA</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- ---------------------------------------------------------------- footer ----------------------------------------------------------------
+    <div class="container-fluid footer my-3 p-4 mb-0">
+        <div class="container footer-inner my-5">
+            <div class="row footer-content">
+                <div class="col f-about">
+                    <p class="navbar-brand ps-4 pe-3 footer"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+                    <p>We have over 20 years experience providing expert Educational both businesses and
+                        individuals.
+                        Our Investment Committee brings cades the industry expertise in driving our investment
+                        approach.
+                        portfolio constructor and allocation</p>
+                    <a class="btn btn-secondary" href="#">Start Learning Now</a>
+                </div>
+
+                <div class="col quick-link">
+                    <h3>Quick Links</h3>
+                    <hr class="featurette-divider">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Help</li>
+                        <li>Contact</li>
+                        <li>Courses</li>
+                        <li>Faculty</li>
+                    </ul>
+                </div>
+                <div class="col f-contact">
+                    <h3>Contact Us</h3>
+                    <hr class="featurette-divider">
+                    <p>If you want to contact us about any issue our support available to help you 8am-7pm
+                        Monday to
+                        saturday.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> Address: DSPMU,Moharabadi,Hatma,Hanchi
+                    </p>
+                    <p><i class="fa-solid fa-phone-volume"></i> Call: 9008000776</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: dspmu@gmail.com</p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <footer id="footer-section" class="my-4 pt-2 px-3">
+                <p class="float-end"><a href="index.html">Back to top</a></p>
+                <p>© 2017-2025 Company, All rights reserved.</p>
+            </footer>
+
+        </div>
+    </div> -->
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

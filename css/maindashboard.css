@@ -1,0 +1,410 @@
+/* --------------------------------navbar ----------------------------------*/
+.navbar{
+    position: fixed;
+    z-index: 3;
+    background-color: #dcdada;
+    width: 100%;
+    
+}
+.navbar-brand {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(67, 10, 10);
+}
+
+.navbar-brand:hover {
+    color: rgb(67, 10, 10);
+}
+
+.dropdown-item:hover{
+	background-color: #e3c7c7;
+	width: 90%;
+	border-radius: 5px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+/* ------------------------------------- top-photo -------------------------------- */
+.container-fluid.top-photo {
+    position: relative;
+    top: 75px;
+    z-index: 1;
+    height: 450px;
+    width: 100%;
+    background-image: url(../image/about-bgi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.top-photo {
+    position: relative;
+    background: url("../image/edubost10.jpg") center/cover no-repeat;
+}
+
+.top-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.69)),
+        url("your-image.jpg") center/cover no-repeat;
+    /* fade level */
+    z-index: 1;
+}
+
+.top-photo .image-inside {
+    position: relative;
+    z-index: 2;
+}
+
+
+.container-fluid.top-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row.image-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-line {
+    font-family: "Caveat", cursive;
+    /* font-optical-shabox-shadow:auto; */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.first-line {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 10px rgb(98, 96, 96);
+    font-style: normal;
+    font-size: 4rem;
+    color: #fff;
+}
+
+
+/* ------------------------------- fill the form ---------------------------------------- */
+.container-fluid.fill-form {
+    position: relative;
+    top: 90px;
+    background-image: url(../image/bgimage4.jpg);
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: #1b0101;
+}
+
+
+label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-weight: 600px;
+    margin-left: 10px;
+}
+
+.form-control {
+    background-color: rgb(234, 234, 219);
+    height: 50px;
+    width: 60%;
+}
+
+#button-submit {
+    background-color: rgb(252, 188, 12);
+    width: 160px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 0;
+    height: 50px;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+
+#button-submit:hover {
+    background-color: #fff;
+    background-color: rgba(252, 196, 12, 0.725);
+}
+
+/*----------------------- tabs content total-member -------------------------*/
+.imgage {
+    box-shadow: 0 0 5px 5px grey;
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.imgage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.7s ease;
+    border-radius: 20px;
+}
+
+.dash-Content {
+    background-image: url(../image/bgBEIGE.jpg);
+    width: 100%;
+    min-height: 750px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box {
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0 0 2px 2px azure;
+}
+
+.box:hover {
+    background-color: #f4c7c7;
+}
+
+.image {
+    background-color: #7d0d0d;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-text {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
+.card-textNO {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.total-details-text {
+    font-weight: 600;
+    color: rgb(77, 76, 76);
+}
+
+/***************************** studentattandance **************************************/
+.container-fluid.student-att {
+    background-image: url(../image/bgimage2.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 5px rgb(98, 96, 96);
+}
+
+#student-Att-heading {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.att-top {
+    display: flex;
+}
+
+#Att-present {
+    margin-left: 5px;
+    height: 50px;
+    width: 87%;
+    border-radius: 10px;
+    background-color: #549cac;
+}
+
+#Att-absent {
+    margin-left: 5px;
+    height: 50px;
+    width: 40%;
+    border-radius: 10px;
+    background-color: #62a049;
+}
+
+#Att-late {
+    margin-left: 5px;
+    height: 50px;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #ffb342;
+}
+
+#Att-halfday {
+    margin-left: 5px;
+    height: 50px;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #ac5484;
+}
+
+.box-0f-attendance {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.Att-row {
+    display: flex;
+}
+
+.Att-box {
+    margin-left: 30px;
+    width: 5%;
+}
+
+.Att-text {
+    margin-left: 30px;
+    width: 70%;
+}
+
+#Att-box1 {
+    background-color: #549cac;
+}
+
+#Att-box2 {
+    background-color: #62a049;
+}
+
+#Att-box3 {
+    background-color: #ffb342;
+}
+
+#Att-box4 {
+    background-color: #ac5484;
+}
+
+.Att-number {
+    font-weight: 600;
+}
+
+
+/*********************** top teacher-topstudent **************************/
+.radius-box{
+     border: 1px solid grey;
+    box-shadow:2px 2px 5px grey;
+    background-color: #fff;
+}
+
+.t-box.my-3 {
+	display: flex;
+}
+
+.tbox-img {
+	margin-left: 20px;
+	border-radius: 50%;
+	height: 50px;
+	width: 20%;
+}
+
+.tbox-name {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.tbox-img img {
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+}
+
+.tbox-name h2 {
+	font-family: "Bebas Neue", sans-serif;
+	margin-bottom: 0px;
+	color: rgb(49, 76, 96);
+    font-size: 1.1rem;
+}
+.tbox-name p{
+    font-size: 0.8rem;
+}
+
+.top-teacher.my-4 h2{
+	font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.6rem;
+    color: black;
+    text-align: center;
+}
+
+.container-fluid.top-section.my-4{
+	display: flex;
+	column-gap: 20px;
+}
+
+
+
+/*-------------------------------------------- footer ------------------------------------*/
+.container-fluid.footer{
+    background-color: #000000;
+    color: white;
+}
+.navbar-brand.ps-4.pe-3.footer{
+    color: white;
+}
+.fa-solid.fa-triangle-exclamation{
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+.fa-solid.fa-phone-volume{
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+
+.fa-solid.fa-envelope{
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+
+.col.quick-link h3 {
+    color:white;
+}
+.col.f-contact h3{
+    color: white;
+}

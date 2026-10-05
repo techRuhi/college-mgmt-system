@@ -1,0 +1,167 @@
+/* --------------------------------navbar ----------------------------------*/
+.navbar{
+    position: fixed;
+    z-index: 3;
+    background-color: #dcdada;
+    width: 100%;
+    
+}
+.navbar-brand {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(67, 10, 10);
+}
+
+.navbar-brand:hover {
+    color: rgb(67, 10, 10);
+}
+
+.dropdown-item:hover {
+    background-color: #e3c7c7;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+/* ------------------------------------- top-photo -------------------------------- */
+.container-fluid.top-photo {
+     position: relative;
+    top:75px;
+    z-index: 1;
+    height: 450px;
+    width: 100%;
+    background-image: url(../image/edubost8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.top-photo {
+    position: relative;
+    background: url("../image/edubost10.jpg") center/cover no-repeat;
+}
+
+.top-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.69)),
+        url("your-image.jpg") center/cover no-repeat;
+    /* fade level */
+    z-index: 1;
+}
+
+.top-photo .image-inside {
+    position: relative;
+    z-index: 2;
+}
+
+
+.container-fluid.top-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row.image-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-line {
+    font-family: "Caveat", cursive;
+    /* font-optical-shabox-shadow:auto; */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.first-line {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 10px rgb(98, 96, 96);
+    font-style: normal;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.second-line {
+    color: maroon;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    /* color: #fff; */
+    background-color: #f6b6b671;
+    width: 40%;
+    border-radius: 5px;
+}
+
+
+/*------------------------------ form -------------------------*/
+#personal-info {
+    background-image: url(../image/bgimage-3.jpg);
+    height: 2870px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    text-align: center;
+    font-style: normal;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.container {
+     background-color: rgba(242, 191, 154, 0.207);
+    border: 1px solid grey;
+    box-shadow: 0 0 2px 2px rgb(179, 177, 177);
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    column-gap: 60px;
+}
+
+.darkword{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.checkbox{
+    width: 25px;
+    height: 25px;
+}
+
+button{
+    font-size: 1.3rem;
+    width: 150px;
+    letter-spacing:1px;
+    font-weight: 700;
+    border-radius: 8px;
+    height: 40px;
+    background-color: rgb(235, 189, 38);
+    box-shadow: 3px 3px 3px #8a7026;
+    border: 0;
+}
+button:hover{
+     background-color: #fdc32393;
+}

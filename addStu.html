@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/addStu.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- cursive simple beautiful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!----------------------------------------------- navbar ------------------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-4 pe-3" href="index.html"><i class="fa-solid fa-school-lock"></i>EduBost</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Student
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="stuDetails.html">Student Details</a></li>
+                            <li><a class="dropdown-item" href="addStu.html">Add Student</a></li>
+                            <li><a class="dropdown-item" href="edit.html">Edit Student</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Teacher
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="teacherDetails.html">Teachers Details</a></li>
+                            <li><a class="dropdown-item" href="addteach.html">Add Teachers</a></li>
+                            <li><a class="dropdown-item" href="tedit.html">Edit Teachers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Fee Status
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Student fees Status</a></li>
+                            <li><a class="dropdown-item" href="#">Teacher fees Status</a></li>
+                            <li><a class="dropdown-item" href="#">Employee fees Status</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Attendance
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="stuAtt.html">Student Attendance</a></li>
+                            <li><a class="dropdown-item" href="teachAtt.html">Teacher Attendance</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Attendance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <a class="btn btn-primary" href="help.html">Help</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!----------------------------------------------------------------------- top-photo -------------------------------------------------------------------------------->
+    <div class="container-fluid top-photo pe-4">
+        <div class="row image-inside me-4">
+            <h1 class="col first-line"> Our Dashboard</h1>
+            <h2 class="col second-line"></h2>
+            <p class="col third-line "> This page helps teachers manage daily academic work easily from one place.</p>
+            <span class="col second-line mt-2">Add New Student</span>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------- personal portion --------------------------------------------------------------->
+    <div id="personal-info" class="container-fluid addStu my-3 py-5">
+        <div class="container p-3">
+            <div class="heading">Personal Information</div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label for="fname" class="form-label darkword">First Name</label>
+                        <input type="text" id="fname" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="sname">Second Name</label>
+                        <input type="text" id="sname" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="nationality">Blood Group:</label>
+                        <select class="form-select" name="state" id="state">
+                            <option value="" disabled selected>Choose your Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A_">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B_">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="DOB">Date of birth:</label>
+                        <input class="form-control" type="date" name="DOB" id="DOB">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <span class="me-2 darkword">Gender: </span>
+                        <input class="form-check-input" type="radio" name="gender" id="male">
+                        <label class="form-check-label me-3" for="male">Male</label>
+
+                        <input class="form-check-input" type="radio" name="gender" id="female">
+                        <label class="form-check-label me-3" for="female">Male</label>
+
+                        <input class="form-check-input" type="radio" name="gender" id="male">
+                        <label class="form-check-label me-3" for="other">other</label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <span class="me-2 darkword">Category: </span>
+                        <input class="form-check-input" type="radio" name="category" id="sc">
+                        <label class="form-check-label me-3" for="sc">SC</label>
+
+                        <input class="form-check-input" type="radio" name="category" id="st">
+                        <label class="form-check-label me-3" for="st">ST</label>
+
+                        <input class="form-check-input" type="radio" name="category" id="obc">
+                        <label class="form-check-label me-3" for="obc">OBC</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2 mt-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="nationality">State:</label>
+                        <!-- <input type="text" name="nationality" id="nationality" class="form-control"> -->
+                        <select class="form-select" name="state" id="state">
+                            <option value="" disabled selected>Choose your state</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CT">Chhattisgarh</option>
+                            <option value="GA">Goa</option>
+                            <option value="GJ">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OR">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TS">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="UT">Uttarakhand</option>
+                            <option value="WB">West Bengal</option>
+                            <option value="CH">Chandigarh</option>
+                            <option value="DL">Delhi</option>
+                            <option value="JK">Jammu and Kashmir</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="photo">Upload Your Photo:</label>
+                        <input type="file" name="Email" id="photo" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------contact details ------------------------------------------------------>
+        <div class="container my-4 p-3">
+            <div class="heading">Contact Information</div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label for="call" class="form-label darkword">Mobile Number</label>
+                        <input type="tel" id="call" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="Emailid">Email ID</label>
+                        <input type="email" id="Emailid" class="form-control" placeholder="abc123@gmail.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="add">Permanent Address</label>
+                        <input type="text" name="add" id="add" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="cadd">Correspondance Address</label>
+                        <input class="form-control" type="text" name="cadd" id="cadd">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2 mt-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="country">Enter your Country</label>
+                        <input class="form-control" type="text" name="country" id="country">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="state">Enter your State</label>
+                        <input class="form-control" type="text" name="state" id="state">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="city">Enter your city</label>
+                        <input class="form-control" type="text" name="city" id="city">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="citypin">Enter your Pincode</label>
+                        <input class="form-control" type="text" name="citypin" id="citypin">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------Parent & Guardian details ------------------------------------------------------>
+        <div class="container my-4 p-3">
+            <div class="heading">Parent & Guardian Details</div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label for="fname" class="form-label darkword">Father's Name</label>
+                        <input type="text" id="fname" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="mname">Mother's Name</label>
+                        <input type="text" id="mname" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="focc">Father's Occupation</label>
+                        <input type="text" name="focc" id="focc" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="mocc">Mother'Occcupation</label>
+                        <input class="form-control" type="date" name="mocc" id="mocc">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2 mt-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="fcn">Father's Contact Number</label>
+                        <input class="form-control" type="tel" name="fcn" id="fcn">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="mcn">Mother's Contact Number</label>
+                        <input class="form-control" type="tel" name="mcn" id="mcn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2 mt-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="pid">Parent's Email ID</label>
+                        <input class="form-control" type="email" name="pid" id="pid" placeholder="abc123@gmail.com">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="mid">Mothers's Email ID</label>
+                        <input class="form-control" type="email" name="mid" id="mid" placeholder="abc123@gmail.com">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!------------------------------------------------------------------Previous Accademic details ------------------------------------------------------>
+        <div class="container my-4 p-3">
+            <div class="heading">Previous Accademic Details</div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="board">10th Board Name:</label>
+                        <select class="form-select" name="board" id="board">
+                            <option value="" disabled selected>Choose your state</option>
+                            <option value="AP">Central Board Of Secondary Education</option>
+                            <option value="AR">Council of the Indian School Certificate Examination</option>
+                            <option value="AS">National Institute of Open Scooling</option>
+                            <option value="BR">Jharkhand Acedemic Council</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="p10">10th Marks in Percentage</label>
+                        <input type="text" id="p10" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="p10year">10th Passing Year</label>
+                        <input type="text" id="p10year" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="board">12th Board Name:</label>
+                        <select class="form-select" name="board" id="board">
+                            <option value="" disabled selected>Choose your state</option>
+                            <option value="AP">Central Board Of Secondary Education</option>
+                            <option value="AR">Council of the Indian School Certificate Examination</option>
+                            <option value="AS">National Institute of Open Scooling</option>
+                            <option value="BR">Jharkhand Acedemic Council</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="p12">12th Marks in Percentage</label>
+                        <input type="text" id="p12" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="p10year">12th Passing Year</label>
+                        <input type="text" id="p10year" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------Current Course details ------------------------------------------------------>
+        <div class="container my-4 p-3">
+            <div class="heading">Current Course Information</div>
+            <div class="row mb-2">
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="year">Acedemic Year</label>
+                        <select class="form-select" name="course" id="course">
+                            <option value="" disabled selected>Choose in which year u are applying</option>
+                            <option value="2025">2025-2026</option>
+                            <option value="2026">2026-2027</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="course">Choose Program/Course</label>
+                        <select class="form-select" name="course" id="course">
+                            <option value="" disabled selected>Choose Course U want to be Enroll</option>
+                            <option value="cse">Btech in CSE</option>
+                            <option value="mech">Btech in machanical</option>
+                            <option value="electrical"> Btech in Electrical</option>
+                            <option value="bca">Bachelor In Computer Application</option>
+                            <option value="bba">Bachelor In Bussiness Administration</option>
+                            <option value="bp">BSc in Physics</option>
+                            <option value="bc">BSc in Mathematics</option>
+                            <option value="bm">BSc in Chemistry</option>
+                            <option value="bz">BSc in Zoology </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="sem">Year/Semester</label>
+                        <select class="form-select" name="sem" id="sem">
+                            <option value="" disabled selected>Choose in Which semester you applied for</option>
+                            <option value="1st">1st Year/ Semester 1</option>
+                            <option value="3rd">2nd Year/ Semester 3</option>
+                            <option value="5th">3rd Year/ Semester 5</option>
+                            <option value="7th">4th Year/ Semester 7</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="Addmission">Mode Of Addmission</label>
+                        <select class="form-select" name="sem" id="sem">
+                            <option value="" disabled selected>Choose your mode of addmission</option>
+                            <option value="st">Regular</option>
+                            <option value="rd">Lateral Entry</option>
+                            <option value="th">]Management Quota</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!------------------------------------------------------------------Document Upload ------------------------------------------------------>
+        <div class="container my-4 p-3">
+            <div class="heading">Document Upload</div>
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="sphoto">Student Photo</label>
+                        <input type="file" name="sphoto" id="sphoto" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="mark10">10th Marksheet</label>
+                        <input type="file" name="mark10" id="mark10" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="mark12">12th Marksheet</label>
+                        <input type="file" name="mark12" id="mark12" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="tc">Transfer Certificate</label>
+                        <input type="file" name="tc" id="tc" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="mc">Migration Certificate</label>
+                        <input type="file" name="mc" id="mc" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="cc">Caste Certificate</label>
+                        <input type="file" name="cc" id="cc" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="ic">Income Certificate</label>
+                        <input type="file" name="ic" id="ic" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group mb-2">
+                        <label class="form-label darkword" for="chc">Characteristics Certificate</label>
+                        <input type="file" name="chc" id="chc" class="form-control" accept="imsge/*">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 mx-5 form-check">
+            <input type="checkbox" class="form-check-input checkbox me-3" id="exampleCheck1">
+            <label class="form-check-label darkword" for="exampleCheck1">Check me out</label>
+        </div>
+        <button class="mx-5 my-2">Submit</button>
+    </div>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

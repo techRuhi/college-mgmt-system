@@ -1,0 +1,251 @@
+/* --------------------------------navbar ----------------------------------*/
+.navbar{
+    position: fixed;
+    z-index: 3;
+    background-color: #dcdada;
+    width: 100%;
+    
+}
+.navbar-brand.ps-4.pe-3 {
+	font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(67, 10, 10);
+}
+
+.navbar-brand:hover {
+    color: rgb(67, 10, 10);
+}
+
+/*--------------------------------- top-section ---------------------------------*/
+.container-fluid.top-section {
+    background-image: linear-gradient(to bottom, #f9f5f1 0%, #d9bda6 100%);
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row.top-portion {
+	/* margin-bottom: 60px; */
+	position: relative;
+	top: 110px;
+	z-index:1;
+    border-radius: 30px;
+    background-image: url(../image/blur.jpg);
+    height: 400px;
+    width: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-image {
+    height: 350px;
+    width: 150px;
+    border-radius: 30px;
+}
+
+.top-image img {
+    height: 350px;
+    width: 260px;
+    border: 2px solid rgb(249, 243, 212);
+    border-radius: 30px;
+    box-shadow: 0 0 3px 3px rgb(166, 150, 150);
+    transition: transform 0.7s ease;
+}
+
+.top-image img:hover{
+    transform: rotateY(360deg);
+}
+
+.top-text h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4.5rem;
+    color: rgba(73, 41, 2, 0.79);
+    text-shadow: 2px 2px 5px rgb(145, 140, 134);
+}
+
+.top-text h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: rgb(48, 47, 47);
+}
+
+.top-text p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgb(68, 71, 82);
+}
+
+
+
+/* ---------------------------------------------------------personal details portion --------------------------------------- */
+.top-teacher.my-4 h2{
+	font-family: "Cardo", serif;
+	font-weight: 800;
+	text-align: center;
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	padding: 15px;
+}
+
+.container.details-portion{
+	display: flex;
+	row-gap: 30px;
+}
+.container.content-of-acedemic{
+	height: 300px;
+	overflow-y: auto;
+}
+.t-box{
+	display: flex;
+	padding-left: 20px;
+	padding-top: 10px;
+
+}
+.t-box:hover{
+	background-color: #f4eadc;
+}
+.tbox-point{
+	width: 50%;
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+/*--------------------------------------------------------- attendance --------------------------------------------------------------*/
+.row.p-4 {
+	display: flex;
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	margin: 10px;
+}
+
+#student-Att-heading {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.att-top {
+	display: flex;
+}
+
+#Att-present {
+	margin-left: 5px;
+	height: 50px;
+	width: 87%;
+	border-radius: 10px;
+	background-color: #549cac;
+}
+
+#Att-absent {
+	margin-left: 5px;
+	height: 50px;
+	width: 40%;
+	border-radius: 10px;
+	background-color: #62a049;
+}
+
+#Att-late {
+	margin-left: 5px;
+	height: 50px;
+	width: 20%;
+	border-radius: 10px;
+	background-color: #ffb342;
+}
+
+#Att-halfday {
+	margin-left: 5px;
+	height: 50px;
+	width: 20%;
+	border-radius: 10px;
+	background-color: #ac5484;
+}
+
+.box-0f-attendance {
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.Att-row {
+	display: flex;
+}
+
+.Att-box {
+	margin-left: 30px;
+	width: 5%;
+}
+
+.Att-text {
+	margin-left: 30px;
+	width: 70%;
+}
+
+#Att-box1 {
+	background-color: #549cac;
+}
+
+#Att-box2 {
+	background-color: #62a049;
+}
+
+#Att-box3 {
+	background-color: #ffb342;
+}
+
+#Att-box4 {
+	background-color: #ac5484;
+}
+
+.Att-number {
+	font-weight: 600;
+}
+
+.container.radius.box.my-4 {
+	border: 1px solid rgb(57, 65, 80);
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px;
+}
+
+/* ------------------------------------------- payment-Details ------------------------------------------- */
+.container.payment-details{
+	border: 1px solid rgb(57, 65, 80);
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px;
+}
+.container.payment-heading{
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	padding: 10px;
+}
+.col.top{
+	font-size: 1.1rem;
+	font-weight: 600;
+	background-color: #d8bfb1;
+	padding: 10px;
+}
+.row.text-center{
+	padding-top: 10px;
+}
+/*------------------------------------- Exam-result-status ------------------------------------- */
+
+.col-12{
+	font-weight: 600;
+}

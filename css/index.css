@@ -1,0 +1,857 @@
+/* --------------------------------navbar ----------------------------------*/
+.navbar {
+    position: fixed;
+    z-index: 6;
+    background-color: #dcdada;
+    width: 100%;
+
+
+}
+
+.navbar-brand {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(67, 10, 10);
+}
+
+.navbar-brand:hover {
+    color: rgb(67, 10, 10);
+}
+
+.image-mine {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.image-mine img {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%
+}
+
+/* ------------------------------------- top-photo -------------------------------- */
+.container-fluid.top-photo {
+    z-index: 1;
+    height: 700px;
+    width: 100%;
+    background-image: url(../image/edubost10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    animation: zoomOnce 2s ease-in-out;
+}
+
+/* 
+.contaiiner-fluid.top-photo{
+    transform: scale(1.05);
+} */
+
+@keyframes zoomOnce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container-fluid.top-photo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.row.image-inside {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.third-line {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.first-line {
+    font-family: "Playwrite NZ Basic", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.second-line {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.7rem;
+    color: #fff;
+}
+
+.top-photo {
+    position: relative;
+    background: url("../image/edubost10.jpg") center/cover no-repeat;
+}
+
+.top-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.89)),
+        url("your-image.jpg") center/cover no-repeat;
+    /* fade level */
+    z-index: 1;
+}
+
+.top-photo .image-inside {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ----------------------------------- Our academics supports --------------------------------- */
+.container.academics.supports {
+    display: flex;
+    flex-direction: column;
+}
+
+.container.academics\.supports.my-5 {
+    background-image: url(../image/bgimage.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.container.top-photo:hover {
+    transform: scale(1.05);
+}
+
+.col.academics\.supports-head-1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+
+.col.academics\.supports-head-2 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.col.academics\.supports-head-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-academics-supports {
+    height: 300px;
+    width: 550px;
+    overflow: hidden;
+
+}
+
+.image-academics-supports img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.7s ease;
+
+}
+
+.image-academics-supports:hover img {
+    transform: scale(1.05);
+}
+
+.img-beside-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-beside-text.ms-3 h2 {
+    font-weight: 600;
+    color: maroon;
+    font-size: 22px;
+}
+
+.img-beside-text.ms-3 p {
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+/*------------------------------------ OUR COURSES -----------------------------------*/
+.container.courses {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(211, 116, 116, 0.167);
+    border-radius: 40px;
+}
+
+.course-text-head {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: rgb(98, 2, 2);
+}
+
+.container.course-img {
+    width: 740px;
+    height: 550px;
+}
+
+.container.course-img img {
+    width: 740px;
+    height: 550px;
+}
+
+
+.top-department-heading h2 {
+    text-align: left;
+    color: rgb(96, 27, 27);
+    margin: 10px;
+    font-family: "Cardo", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    transition: color 0.7 ease-in-out;
+}
+
+.Click-to-view.btn.btn-primary {
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(44, 63, 94);
+    background-image: linear-gradient(to left, #f2c625 0%, #fb9e1c 100%);
+    box-shadow: 3px 3px 5px rgb(94, 52, 10);
+    text-decoration: none;
+    height: 50px;
+    border: 0px;
+    width: 150px;
+    transition: all 0.9s ease-in;
+}
+
+.Click-to-view.btn.btn-primary:hover {
+    background-image: linear-gradient(to right, #f2c625 0%, #fb9e1c 100%);
+    box-shadow: 3px 3px 5px rgb(94, 52, 10);
+}
+
+.top-department-heading a {
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(44, 63, 94);
+    background-image: linear-gradient(to left, #f2c625 0%, #fb9e1c 100%);
+    box-shadow: 3px 3px 5px rgb(94, 52, 10);
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+    transition: all 0.9s ease-in;
+}
+
+.top-department-heading a:hover {
+    background-image: linear-gradient(to right, #f2c625 0%, #fb9e1c 100%);
+    box-shadow: 3px 3px 5px rgb(94, 52, 10);
+}
+
+
+/* ------------------------------------------top department  --------------------------------- */
+.container-fluid.top-department.my-4 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(229, 228, 227);
+}
+
+.row.top-corses-heading {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px grey;
+}
+
+.container.top-department.my-3.mx-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row.top-corses-body.mx-2.my-4.justify-content-center.text-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.top-corses-body a {
+    color: black;
+    text-decoration: none;
+}
+
+.col-lg-3.col-md-6.top-corses-div {
+    height: 250px;
+    width: 250px;
+    /* background-color: azure; */
+    border-top: 1px solid rgb(193, 150, 150);
+    border-right: 1px solid rgb(193, 150, 150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.col-lg-3.col-md-6.top-corses-div:hover {
+    background-color: rgb(255, 255, 255);
+    height: 253px;
+    width: 253px;
+    box-shadow: 0 0 7px 7px rgb(220, 218, 218);
+    border-radius: 10px;
+}
+
+.col-lg-3.col-md-6.top-corses-div:hover .department-img {
+    background-color: rgb(223, 167, 11);
+}
+
+.col-lg-3.col-md-6.top-corses-div:hover .department-img i {
+    color: black;
+}
+
+.department-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(112, 16, 16);
+    margin-bottom: 15px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.department-img i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.fa-solid.fa-flask {
+    color: azure;
+    font-size: 2rem;
+}
+
+.department-name {
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3rem;
+    color: rgb(57, 56, 56);
+}
+
+.department-number {
+    font-family: "Cardo", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.fa-solid.fa-lightbulb {
+    color: azure;
+    font-size: 2rem;
+}
+
+.fa-solid.fa-compass-drafting {
+    color: azure;
+    font-size: 2rem;
+}
+
+.fa-solid.fa-earth-americas {
+    color: azure;
+    font-size: 2rem;
+}
+
+.fa-solid.fa-graduation-cap {
+    color: azure;
+    font-size: 2rem;
+}
+
+.fa-solid.fa-business-time {
+    color: azure;
+    font-size: 2rem;
+}
+
+.fa-solid.fa-users-viewfinder {
+    color: azure;
+    font-size: 2rem;
+}
+
+/*------------------------------------------------- success -----------------------------------------------*/
+.conatainer-fluid.success-story {
+    position: relative;
+    top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.row.success-story-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col.success-text {
+    width: 80%;
+}
+
+.col.success-text p {
+    font-size: 1.3rem;
+}
+
+.col-md-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .col-md-3:hover {
+    border-bottom: 1px solid maroon;
+    background-color: rgba(90, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(90, 0, 0, 0.1);
+    border-radius: 60px;
+} */
+
+.card.img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.card.img img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 4px rgb(67, 66, 66);
+}
+
+.text-card h4 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.carousel-control-prev {
+    margin-left: -3rem;
+}
+
+.carousel-control-next {
+    margin-right: -3rem;
+}
+
+.carousel-control-prev-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border-radius: 15px;
+}
+
+.carousel-control-next-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border-radius: 15px;
+}
+
+.carousel-control-prev span {
+    background: maroon !important;
+}
+
+.carousel-control-next span {
+    background: maroon !important;
+}
+
+.carousel-control-prev {
+    margin-left: -5.5rem;
+}
+
+.carousel-control-next {
+    margin-right: -5.5rem;
+}
+
+.row.g-3.p-3 {
+
+    width: 1000px;
+    height: 200px;
+    border: 1px solid rgb(78, 76, 76);
+    border-radius: 140px;
+    box-shadow: 0 0 4px 4px grey;
+}
+
+.photo-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*-------------------------- admission *----------------------------*/
+
+.beigeBG {
+    background-image: url(../image/bgBEIGE.jpg);
+    width: 100%;
+    height: 850px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.container.admission {
+    position: absolute;
+    top: -110px;
+    background-image: url(../image/pro-banner.png);
+    height: 280px;
+    width: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.row.add-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.col.headline {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: whitesmoke;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/*---------------- ourcampuslife ----------------------*/
+.ourcampuslife {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 280px;
+}
+
+.campus-lifeH2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.campus-lifeH1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+}
+
+.flex-portion {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.card.shadow {
+    width: 360px;
+}
+
+.campusButton1 {
+    position: relative;
+    left: 50%;
+    top: 32px;
+}
+
+.campusButton2 {
+    position: relative;
+    left: 50%;
+    top: 2px;
+}
+
+.shadow-effect {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px black;
+}
+
+.shadow-effect img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.shadow-effect:hover img {
+    transform: scale(1.2);
+}
+
+/* ----------------------------------student-feedback -------------------------*/
+
+.student-feedback {
+    position: relative;
+    top: 200px;
+}
+
+.card.shadow.feed-shadow-effect {
+    width: 450px;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card.shadow.feed-shadow-effect img {
+    height: 100%;
+    width: 100%;
+}
+
+.hover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover:hover {
+    background-color: rgba(0, 0, 0, 0.627);
+}
+
+.hover pre {
+
+    position: absolute;
+    left: -304px;
+    bottom: -100px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.hover:hover pre {
+    color: white;
+    bottom: 49%;
+    left: -304px;
+}
+
+.col.campus-lifeH2 {
+    /* font-size: rem; */
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #4b2a2a;
+}
+
+.feedback-text {
+    height: 500px;
+    width: 570px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-control-prev-icon.positionbutton {
+    height: 50px;
+    width: 50px;
+    width: 70px;
+    position: relative;
+    left: 682px;
+    top: 211px;
+}
+
+.carousel-control-next-icon.positionbutton {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    width: 70px;
+    right: 399px;
+    top: 211px;
+}
+
+.successname {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.success-place {
+    color: rgb(81, 81, 81);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* ------------------- where all we belongs ------------------------------------------ */
+.container-fluid.belong {
+    position: relative;
+    top: 250px;
+    background-image: url(../image/uni-member.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparentBelong {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #dee8f3c1;
+    z-index: 1;
+}
+
+.row.belong-textPart {
+    width: 70%;
+    z-index: 3;
+}
+
+#belong-text1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+#belong-text2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#belong-text3 {
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.row.linkPart {
+    z-index: 3;
+}
+
+.row.linkPart {
+    display: flex;
+}
+
+.row.linkPart a {
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.row.linkPart a:hover{
+    background-image: linear-gradient(to left, #f2c625 0%, #fb9e1c 100%);
+}
+
+/*-------------------------------------------- footer ------------------------------------*/
+.container-fluid.footer {
+    position: relative;
+    top: 300px;
+    background-color: #000000;
+    color: white;
+}
+
+.navbar-brand.ps-4.pe-3.footer {
+    color: white;
+}
+
+.fa-solid.fa-triangle-exclamation {
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+
+.fa-solid.fa-phone-volume {
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+
+.fa-solid.fa-envelope {
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}

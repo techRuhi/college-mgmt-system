@@ -1,0 +1,18 @@
+
+#personal-info {
+    background-image: url(../image/bgimage-3.jpg);
+    height: 3100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#preview{
+    height: 70px;
+    width: 70px;
+}
+.phototext{
+    color: green;
+}
+.col.second-line.mt-2 {
+	width: 50%;
+}

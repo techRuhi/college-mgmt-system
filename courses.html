@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cources in DSPMU</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/courses.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- cursive simple beautiful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!----------------------------------------navbar------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-4 pe-3" href="index.html"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <a class="btn btn-primary href=" href="maindashboard.html">Dashboard</a>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--......................................login Modal ................................-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login to EduPortal</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------sign up Modal ----------------------------------------------------->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Get an EduPortal Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label"> Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------- top-photo -------------------------------------------------------------------------------->
+    <div class="container-fluid top-photo pe-4">
+        <div class="row image-inside me-4">
+            <h1 class="col first-line">Our Courses</h1>
+            <h2 class="col second-line"></h2>
+            <p class="col third-line ">Providing Quality Education for Academic and Professional Growth.</p>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------tabs content portion ----------------------------------------------------------------->
+    <div class="container-fluid content-portion-outer my-5">
+        <div class="container content-portion-inner my-4">
+            <div class="row py-4 my-5">
+                <div class="col">
+                    <ul class=" nav nav-tabs" id="courseTab">
+                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#science">Science</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Vocational">Vocational</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#btech">BTech</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Social-Science">Social
+                                Science</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Management">Management</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Commerce">Commerce</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Ph.D">Ph.D</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Diploma">Diploma</a></li>
+                    </ul>
+                    <div class="tab-content pt-4" id="my-course">
+                        <!--=========================== science ================================-->
+                        <div class="tab-pane fade show active" id="science">
+                            <div class="row g-4">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card shadow-sm">
+                                        <img src="./image/chemistry.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">CHEMISTRY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="card shadow-sm">
+                                        <img src="./image/botany.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">BOTANY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm">
+                                        <img src="./image/geology.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">GEOLOGY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm">
+                                        <img src="./image/maths.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">MATHEMATICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm">
+                                        <img src="./image/physics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">PHYSICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm">
+                                        <img src="./image/zoology.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ZOOLOGY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--=========================== vocational ================================-->
+                        <div class="tab-pane fade " id="Vocational">
+                            <div class="row g-4">
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm">
+                                        <img src="./image/bca.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">BCA</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/microbiology.jpg"
+                                            class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">MICROBIOLOGY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/IT.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">IT</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/bba.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">BBA</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--=========================== Commerce ================================-->
+                        <div class="tab-pane fade " id="Commerce">
+                            <div class="row g-4">
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/bcom.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">B.Com(General)</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/banking.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">B.Com(Accounting & Finance)</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/insurance.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">B.Com(Honours)</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/banking.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">B.Com(Banking & Insurance)</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/tax.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">B.Com(Taxation)</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=========================== diploma ================================-->
+                        <div class="tab-pane fade " id="Diploma">
+                            <div class="row g-4">
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Diploma in Computer Engineering</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/mechanical.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Dipmola in Mechanical Engineering</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/civil.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Diploma in Civil Engineering</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/masscommunication.jpg"
+                                            class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Diploma in Mass Commumation</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/journlism.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Diploma in journlaism</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Diploma in Arts</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=========================== Management================================-->
+                        <div class="tab-pane fade" id="Management">
+                            <div class="row g-4">
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--===========================PHD===============================-->
+                        <div class="tab-pane fade" id="Ph.D">
+                            <div class="row g-4">
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/phdENG.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ENGLISH</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/maths.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">MATHEMATICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/chemistry.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">CHEMISTRY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/zoology.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ZOOLOGY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/hindi.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">HINDI</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/botany.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">BOTANY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/physics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">PHYSIS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--===========================social science================================-->
+                        <div class="tab-pane fade" id="Social-Science">
+                            <div class="row g-4">
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/phdENG.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ENGLISH</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/history.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">HISTORY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/political.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">POLITICAL</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/geography.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">GEOGRAPHY</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/economics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ECONOMICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!--===========================Btech================================-->
+                        <div class="tab-pane fade" id="btech">
+                            <div class="row g-4">
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Electronics & Communication</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/bca.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Computer science</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/mechanical.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Mechinical</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/civil.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Civil </p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/IT.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">Information Technology</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-6">
+
+                                    <div class="card shadow-sm"><img src="./image/electronics.jpg" class="card-img-top">
+                                        <div class="card-body text-center">
+                                            <p class="card-text1">ELECTRONICS</p>
+                                            <a class="click-to-view " href="course_details.html">click to view</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------ footer ------------------------------------------------------------------>
+    <div class="container-fluid footer my-3 p-4 mb-0">
+        <div class="container footer-inner my-5">
+            <div class="row footer-content">
+                <div class="col f-about">
+                    <p class="navbar-brand ps-4 pe-3 footer"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+                    <p>We have over 20 years experience providing expert Educational both businesses and individuals.
+                        Our Investment Committee brings cades the industry expertise in driving our investment approach.
+                        portfolio constructor and allocation</p>
+                    <a class="btn btn-secondary" href="#">Start Learning Now</a>
+                </div>
+
+                <div class="col quick-link">
+                    <h3>Quick Links</h3>
+                    <hr class="featurette-divider">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Help</li>
+                        <li>Contact</li>
+                        <li>Courses</li>
+                        <li>Faculty</li>
+                    </ul>
+                </div>
+                <div class="col f-contact">
+                    <h3>Contact Us</h3>
+                    <hr class="featurette-divider">
+                    <p>If you want to contact us about any issue our support available to help you 8am-7pm Monday to
+                        saturday.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> Address: DSPMU,Moharabadi,Hatma,Hanchi</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> Call: 9008000776</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: dspmu@gmail.com</p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <footer id="footer-section" class="my-4 pt-2 px-3">
+                <p class="float-end"><a href="index.html">Back to top</a></p>
+                <p>© 2017-2025 Company, All rights reserved.</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

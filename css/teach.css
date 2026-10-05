@@ -1,0 +1,9 @@
+#top-photo-img{
+    height: 450px;
+    width: 100%;
+    background-image: url(../image/techaatt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}

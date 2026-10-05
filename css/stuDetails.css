@@ -1,0 +1,218 @@
+/* --------------------------------navbar ----------------------------------*/
+.navbar{
+    position: fixed;
+    z-index: 3;
+    background-color: #dcdada;
+    width: 100%;
+    
+}
+.navbar-brand {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(67, 10, 10);
+}
+
+.navbar-brand:hover {
+    color: rgb(67, 10, 10);
+}
+
+.dropdown-item:hover{
+	background-color: #e3c7c7;
+	width: 90%;
+	border-radius: 5px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+.dropdown-menu{
+    background-color: #fbf1e6;
+}
+
+/* ------------------------------------- top-photo -------------------------------- */
+.container-fluid.top-photo {
+    z-index:1;
+    height: 450px;
+    width: 100%;
+    background-image: url(../image/edubost8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.top-photo {
+    position: relative;
+    background: url("../image/edubost10.jpg") center/cover no-repeat;
+}
+
+.top-photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.69)),
+        url("your-image.jpg") center/cover no-repeat;
+    /* fade level */
+    z-index: 1;
+}
+
+.top-photo .image-inside {
+    position: relative;
+    z-index: 2;
+}
+
+
+.container-fluid.top-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row.image-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.second-line {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    background-color: #f6b6b671;
+    width: 57%;
+    border-radius: 5px;
+}
+
+.third-line {
+    font-family: "Caveat", cursive;
+    /* font-optical-shabox-shadow:auto; */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.3rem;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.first-line {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 10px rgb(98, 96, 96);
+    font-style: normal;
+    font-size: 4rem;
+    color: #fff;
+}
+
+
+.second-line {
+    color: maroon;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    /* color: #fff; */
+    background-color: #f6b6b671;
+    width: 50%;
+    border-radius: 5px;
+}
+
+/*-------------------------------- tabs-section ---------------------------*/
+
+.container.content-portion-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row.py-4 {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#courseTab {
+	background-image: linear-gradient(135deg, #faf4e9 0%, #e2d1c3 100%);
+    border-radius:10px;
+    box-shadow: 2px 2px 5px solid #eddacb 100% ;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+    column-gap: 25px;
+	align-items: center;
+	justify-content: center;
+    height: 70px;
+}
+.nav-link{
+    color: black;
+    font-size: 1.1rem;
+}
+.courseTab:hover{
+    background: #5f5024;
+}
+#courseTab .nav-link.active{
+    background-color: #e9b832;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.row.tab-stu-list{
+    background-image: url(../image/bgimage3.jpg);
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 530px;
+    overflow: scroll;
+}
+
+h4{
+  font-family: "Oleo Script", system-ui;
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: normal;
+  margin-top: 25px;
+  color: rgb(220, 37, 37);
+  text-align: center;
+}
+
+
+/*-------------------------------------------- footer ------------------------------------*/
+.container-fluid.footer{
+    background-color: #000000;
+    color: white;
+}
+.navbar-brand.ps-4.pe-3.footer{
+    color: white;
+}
+.fa-solid.fa-triangle-exclamation{
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+.fa-solid.fa-phone-volume{
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+
+.fa-solid.fa-envelope{
+    color: #ac7825;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+

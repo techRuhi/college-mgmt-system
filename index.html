@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- cursive simple beautiful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <!----------------------------------------navbar------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-4 pe-3" href="index.html"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                </ul>
+                <div class="mx-2">
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        href="maindashboard.html">Dashboard</a>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+
+                    <a class="btn btn-light" data-bs-toggle="modal" data-bs-target="#personalModal" href="you.html">
+                        <div class="image-mine"><img src="./image/you-image.jpg"></div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--......................................dashboard login Modal ................................-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-center" id="exampleModalLabel"><b>First Login to View Dashboard</b>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Official Email ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <a class="btn btn-primary text-center" href="maindashboard.html">Submit</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--......................................personal login Modal ................................-->
+    <div class="modal fade" id="personalModal" tabindex="-1" aria-labelledby="personalModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="personalModalLabel">Login to Edubost</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reg-no" class="form-label">Rgistration No.</label>
+                            <input type="password" class="form-control" id="reg-no">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <a class="btn btn-primary text-center" href="you.html">Submit</a>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------sign up Modal ----------------------------------------------------->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Get an EduPortal Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label"> Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!----------------------------------------------------------------------- top-photo -------------------------------------------------------------------------------->
+    <div class="container-fluid top-photo pe-4 overflow-hidden">
+        <div class="row image-inside me-4">
+            <h1 class="col first-line animate__animated animate__bounce">Welcome to edubost college</h1>
+            <h2 class="col second-line">Achieve Your Dreams
+                At Edubost College</h2>
+            <p class="col third-line ">We empower students to achieve their dreams through diverse.</p>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------ Our academics supports ------------------------------------------------------------>
+    <div class="container academics.supports my-5 pt-4">
+        <div class="col academics.supports-head-1">
+            <p> Our academics supports</p>
+        </div>
+        <div class="col academics.supports-head-2 mt-3 animate__animated animate__bounce">
+            <p>Founded in 1970, EduFord College is a global leader in education, committed to quality, innovation, and
+                sustainability, we continue of learning.</p>
+        </div>
+        <div class="col academics.supports-head-3 my-5">
+            <div class=" col-lg-6 image-academics-supports me-3"><img src="./image/edubost-9.jpg"></div>
+            <div class=" col-lg-6 img-beside-text ms-3">
+                <h2>Innovation And Creativity</h2>
+                <p>At EduFord College, innovation and creativity are at the heart ofeducational philosophy. We strive to
+                    foster an environment where students encouraged to think outside the box, explore new ideas, and
+                    push the boundaries of conventional learning. Our programs are designed to inspire originality and
+                    critical thinking, equipping students with the skills to innovate and create in their chosen fields,
+                    Through hands-on projects.
+                </p>
+                <a href="about.html">More About Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------admission ------------------------------------------------------>
+    <div class="container-fluid beigeBG my-5">
+        <div class="container admission my-4">
+            <div class="row add-text">
+                <div class="col ms-4 mt-4 headline">Get Your Quality Skills Certificate Through Edubost</div>
+                <div class="col d-flex flex-row">
+                    <a class=" Click-to-view btn btn-primary mt-4 ms-5 fs-5" href="#">Apply Now</a>
+                    <div class="ms-5 text-white fs-5 mt-4 ms-5 fw-bold"> +1 (415) 555-0132</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container ourcampuslife">
+            <div class="row campus-lifeH2">Our Campus Life</div>
+            <div class="row campus-lifeH1">Campus Life and Curtural Experiences</div>
+            <div class="row campus-lifeCAROUSAL my-5">
+
+                <div id="campusCarousel" class=" container-fluid carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row g-4 w-100%">
+
+                                    <div class="col-md-4">
+                                        <div class="card shadow shadow-effect">
+                                            <img src="./image/campus1.png" class="card-img-top">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card shadow shadow-effect">
+                                            <img src="./image/campus2.png" class="card-img-top">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card shadow shadow-effect">
+                                            <img src="./image/campus3.png" class="card-img-top">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row g-4">
+
+                                    <div class="col-md-4">
+                                        <div class="card shadow shadow-effect">
+                                            <img src="./image/campus2.png" class="card-img-top">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card shadow shadow-effect">
+                                            <img src="./image/campus3.png" class="card-img-top">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card shadow shadow-effect">
+                                            <img src="./image/campus1.png" class="card-img-top">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev campusButton1" type="button" data-bs-target="#campusCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"><i class="fa-solid fa-left-long" text-white></i></span>
+                    </button>
+
+                    <button class="carousel-control-next campusButton2" type="button" data-bs-target="#campusCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"><i
+                                class="fa-solid fa-right-long text-white"></i></span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------top department  ------------------------------------------------------------------->
+    <div class="container-fluid top-department my-4">
+        <div class="row top-department-heading my-3 mt-2">
+            <h2 class="col course-text-head">Our Top Department</h2>
+            <a class="my-3" href="courses.html">Explore Course</a>
+        </div>
+        <div class="container top-department my-3  mx-5 mb-5">
+            <div class="row top-corses-body mx-2 my-4 justify-content-center text-center">
+
+                <a class="col-lg-3 col-md-6 top-corses-div " href="ourCourses.html">
+                    <div class="department-img">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <div class="department-name ">Science</div>
+                    <div class="department-number mb-3">Courses: 6</div>
+                </a>
+
+                <a class="col-lg-3 col-md-6 top-corses-div " href="ourCourses.html">
+                    <div class="department-img">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div class="department-name ">Vocational</div>
+                    <div class="department-number mb-3">Courses: 8</div>
+                </a>
+
+                <a class="col-lg-3 col-md-6 top-corses-div " href="ourCourses.html">
+                    <div class="department-img">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="department-name ">Humanities</div>
+                    <div class="department-number mb-3">Courses: 6</div>
+                </a>
+
+                <a class="col-lg-3 col-md-6 top-corses-div " href="ourCourses.html">
+                    <div class="department-img">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <div class="department-name ">Social Science</div>
+                    <div class="department-number mb-3">Courses: 8</div>
+                </a>
+
+                <a class="col-lg-3 col-md-6 top-corses-div " href="ourCourses.html">
+                    <div class="department-img">
+                        <i class="fa-solid fa-business-time"></i>
+                    </div>
+                    <div class="department-name ">Management</div>
+                    <div class="department-number mb-3">Courses: 6</div>
+                </a>
+
+                <a class="col-lg-3 col-md-6 top-corses-div " href="ourCourses.html">
+                    <div class="department-img">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <div class="department-name ">Commerce</div>
+                    <div class="department-number mb-3">Courses: 6</div>
+                </a>
+
+                <a class="col-lg-3 col-md-6 top-corses-div " href="ourCourses.html">
+                    <div class="department-img">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="department-name ">Ph.D</div>
+                    <div class="department-number mb-3">Courses: 6</div>
+                </a>
+
+                <a class="col-lg-3 col-md-6 top-corses-div" href="ourCourses.html">
+                    <!-- <div class="col-lg-3 col-md-6 top-corses-div "> -->
+                    <div class="department-img">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <div class="department-name ">Diploma</div>
+                    <div class="department-number mb-3">Courses: 6</div>
+                    <!-- </div> -->
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------- success --------------------------------------------------------------------->
+    <div class="conatainer-fluid success-story">
+        <div class="container row success-story-inside">
+            <div class="col success-text py-4">
+                <p>"EduFord College has truly exceeded my expectations in every way. The state-of-the-art facilities,
+                    from the cutting-edge labs to the well-equipped classrooms, have created an ideal environment for
+                    learning. The faculty are incredibly supportive, always ready to offer guidance and encouragement."
+                </p>
+            </div>
+            <div class="col success-carousal ">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="container carousal-div">
+                        <div class="carousel-inner">
+
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="container py-4  photo-box">
+                                    <div class="row g-3 p-3">
+
+                                        <div class="col-md-3">
+                                            <div class="card img"><img src="./image/sussess-1.png"></div>
+                                            <div class="text-card mt-2 text-center">
+                                                <h4>Ruhi Anjum</h4>
+                                                <p class="mb-0">software Engineer</p>
+                                                <p>in Infosis</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card img"><img src="./image/sussess-1.png"></div>
+                                            <div class="text-card mt-2 text-center">
+                                                <h4>Ruhi Anjum</h4>
+                                                <p class="mb-0">software Engineer</p>
+                                                <p>in Infosis</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card img"><img src="./image/sussess-1.png"></div>
+                                            <div class="text-card mt-2 text-center">
+                                                <h4>Ruhi Anjum</h4>
+                                                <p class="mb-0">software Engineer</p>
+                                                <p>in Infosis</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card img"><img src="./image/sussess-1.png"></div>
+                                            <div class="text-card mt-2 text-center">
+                                                <h4>Ruhi Anjum</h4>
+                                                <p class="mb-0">software Engineer</p>
+                                                <p>in Infosis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item ">
+                                <div class="container py-4 photo-box">
+                                    <div class="row g-3 p-3">
+
+                                        <div class="col-md-3">
+                                            <div class="card img"><img src="./image/sussess-1.png"></div>
+                                            <div class="text-card mt-2 text-center">
+                                                <h4>Ruhi Anjum</h4>
+                                                <p class="mb-0">software Engineer</p>
+                                                <p>in Infosis</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card img"><img src="./image/sussess-1.png"></div>
+                                            <div class="text-card mt-2 text-center">
+                                                <h4>Ruhi Anjum</h4>
+                                                <p class="mb-0">software Engineer</p>
+                                                <p>in Infosis</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card img"><img src="./image/sussess-1.png"></div>
+                                            <div class="text-card mt-2 text-center">
+                                                <h4>Ruhi Anjum</h4>
+                                                <p class="mb-0">software Engineer</p>
+                                                <p>in Infosis</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card img"><img src="./image/sussess-1.png"></div>
+                                            <div class="text-card mt-2 text-center">
+                                                <h4>Ruhi Anjum</h4>
+                                                <p class="mb-0">software Engineer</p>
+                                                <p>in Infosis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev " type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"><i class="fa-solid fa-left-long"></i></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"><i class="fa-solid fa-right-long"></i></span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------- student-feedback ---------------------------------------------->
+    <div class="container-fluid student-feedback">
+
+        <div id="ffeback" class=" container-fluid carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row g-4">
+
+                            <div class="col-6 feedback-pht0">
+                                <div class="card shadow feed-shadow-effect">
+                                    <img src="./image/feed-1.jpg" class="card-img-top">
+                                    <div class="hover">
+
+                                        <pre>
+                                            Batch: 2000-2024
+                                            Course: Btech in CS
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6  feedback-text">
+                                <div class="row d-flex flex-column align-items-center">
+                                    <div class="col campus-lifeH1">Our Students Success Stories</div>
+                                    <div class="col campus-lifeH2">Happy Student Feedback</div>
+                                </div>
+                                <div class="my-5">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus, quidem
+                                        alias sint sunt hic deleniti beatae impedit dolorum, placeat rerum tempore
+                                        doloribus error facilis voluptas iusto illum. Minus, consequuntur.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus,
+                                        quidem
+                                        alias sint sunt hic deleniti beatae impedit dolorum</p>
+
+                                    <h3 class="successname">Ruhi Anjum</h3>
+                                    <p class="success-place">Frontend Developer in Infosis</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row g-4">
+
+                            <div class="col-6 feedback-pht0">
+                                <div class="card shadow feed-shadow-effect">
+                                    <img src="./image/feed-2.jpg" class="card-img-top">
+                                    <div class="hover">
+                                        <pre>
+                                            Batch: 2000-2024
+                                            Course: Btech in CS
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6  feedback-text">
+                                <div class="row d-flex flex-column align-items-center">
+                                    <div class="col campus-lifeH1">Our Students Success Stories</div>
+                                    <div class="col campus-lifeH2">Happy Student Feedback</div>
+                                </div>
+                                <div class="my-5">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus, quidem
+                                        alias sint sunt hic deleniti beatae impedit dolorum, placeat rerum tempore
+                                        doloribus error facilis voluptas iusto illum. Minus, consequuntur.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus,
+                                        quidem
+                                        alias sint sunt hic deleniti beatae impedit dolorum</p>
+
+                                    <h3 class="successname">Ruhi Anjum</h3>
+                                    <h4 class="success-place">Frontend Developer in Infosis</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row g-4">
+
+                            <div class="col-6 feedback-pht0">
+                                <div class="card shadow feed-shadow-effect">
+                                    <img src="./image/ffed-3.jpg" class="card-img-top">
+                                    <div class="hover">
+                                        <pre>
+                                            Batch: 2000-2024
+                                            Course: Btech in CS
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6  feedback-text">
+                                <div class="row d-flex flex-column align-items-center">
+                                    <div class="col campus-lifeH1">Our Students Success Stories</div>
+                                    <div class="col campus-lifeH2">Happy Student Feedback</div>
+                                </div>
+                                <div class="my-5">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus, quidem
+                                        alias sint sunt hic deleniti beatae impedit dolorum, placeat rerum tempore
+                                        doloribus error facilis voluptas iusto illum. Minus, consequuntur.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus,
+                                        quidem
+                                        alias sint sunt hic deleniti beatae impedit dolorum</p>
+
+                                    <h3 class="successname">Ruhi Anjum</h3>
+                                    <h4 class="success-place">Frontend Developer in Infosis</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row g-4 ">
+
+                            <div class="col-6 feedback-pht0">
+                                <div class="card shadow feed-shadow-effect">
+                                    <img src="./image/ffed-4.jpg" class="card-img-top">
+                                    <div class="hover">
+                                        <pre>
+                                            Batch: 2000-2024
+                                            Course: Btech in CS
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6  feedback-text ">
+                                <div class="row d-flex flex-column align-items-center">
+                                    <div class="col campus-lifeH1">Our Students Success Stories</div>
+                                    <div class="col campus-lifeH2">Happy Student Feedback</div>
+                                </div>
+                                <div class="my-5">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus, quidem
+                                        alias sint sunt hic deleniti beatae impedit dolorum, placeat rerum tempore
+                                        doloribus error facilis voluptas iusto illum. Minus, consequuntur.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus,
+                                        quidem
+                                        alias sint sunt hic deleniti beatae impedit dolorum</p>
+
+                                    <h3 class="successname">Ruhi Anjum</h3>
+                                    <h4 class="success-place">Frontend Developer in Infosis</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev ffeback1" type="button" data-bs-target="#ffeback" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon positionbutton"><i
+                        class="fa-solid fa-left-long text-white"></i></span>
+            </button>
+
+            <button class="carousel-control-next ffeback2" type="button" data-bs-target="#ffeback" data-bs-slide="next">
+                <span class="carousel-control-next-icon positionbutton"><i
+                        class="fa-solid fa-right-long text-white"></i></span>
+            </button>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!---------------------------------------------------------------- where all we belongs ---------------------------------------------------------------->
+    <div class="container-fluid belong my-5">
+        <div class="transparentBelong"></div>
+        <div class="row belong-textPart">
+            <p class="text-center" id="belong-text1">Let's Get Started</p>
+            <p class="text-center" id="belong-text2">Where all belong</p>
+            <p class="text-center" id="belong-text3">We believe education is enriched by the unique perspectives and experiences each
+                student brings, and we are committed to fostering an environment that celebrates and values diversity in
+                all its forms. It is central to our mission to embrace and encourage diversity, equity and inclusion
+                (DE&I).</p>
+        </div>
+        <div class="row d-flex justify-content-center w-75 gap-3 linkPart">
+            <a class="col belongButtons" href="courses.html">Find the right program</a>
+            <a class="col belongButtons" href="help.html">Start your Application</a>
+            <a class="col belongButtons" href="help.html">Request information</a>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------------------------ footer ------------------------------------------------------------------>
+    <div class="container-fluid footer my-3 p-4 mb-0">
+        <div class="container footer-inner my-5">
+            <div class="row footer-content">
+                <div class="col f-about">
+                    <p class="navbar-brand ps-4 pe-3 footer"><i class="fa-solid fa-school-lock l0go"></i>EduBost</a>
+                    <p>We have over 20 years experience providing expert Educational both businesses and
+                        individuals.
+                        Our Investment Committee brings cades the industry expertise in driving our investment
+                        approach.
+                        portfolio constructor and allocation</p>
+                    <a class="btn btn-secondary" href="help.html">Start Learning Now</a>
+                </div>
+
+                <div class="col quick-link">
+                    <h3>Quick Links</h3>
+                    <hr class="featurette-divider">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="help.html">Contact</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="col f-contact">
+                    <h3>Contact Us</h3>
+                    <hr class="featurette-divider">
+                    <p>If you want to contact us about any issue our support available to help you 8am-7pm Monday to
+                        saturday.</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> Address: DSPMU,Moharabadi,Hatma,Hanchi</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> Call: 9008000776</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: dspmu@gmail.com</p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <footer id="footer-section" class="my-4 pt-2 px-3">
+                <p class="float-end"><a href="index.html">Back to top</a></p>
+                <p>© 2017-2025 Company, All rights reserved.</p>
+            </footer>
+
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
