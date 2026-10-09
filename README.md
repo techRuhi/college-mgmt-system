@@ -4,6 +4,7 @@ A comprehensive web-based platform designed to streamline administrative tasks, 
 
 ## ✨ Features
 
+- **Navigation pages:** Home, About, Help, Courses, pages are there for new user to have the idea of the College.
 - **Dashboard Navigation:** Centralized main dashboard for quick access to institutional metrics and system modules.
 - **Student & Teacher Management:** Easily add, view, and manage student profiles and faculty records.
 - **Attendance Tracking:** Dedicated tracking systems for monitoring student and teacher attendance.
@@ -18,7 +19,7 @@ A comprehensive web-based platform designed to streamline administrative tasks, 
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://techruhi.github.io/college-mgmt-system/) *(Deployed via GitHub Pages)*
+[View Live Demo](https://techruhi.github.io/college-mgmt-system/) 
 
 ## 👩‍💻 About Me
 
